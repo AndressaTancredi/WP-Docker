@@ -77,6 +77,6 @@ volumes:
 * Dentro do diretório rode o comando:
 `docker-compose up -d`
 
-* Agora acesse http://localhost:8000 no seu browser, prossiga com a instalção do Wordpress.
+* Agora acesse http://localhost:8000 no seu browser e prossiga com a instalção do Wordpress.
 
 Feito com s2 por Andressa Tancredi.
