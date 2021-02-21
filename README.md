@@ -72,6 +72,7 @@ services:
        WORDPRESS_DB_NAME: wordpress
 volumes:
     db_data: {}
+ ```
 
 * Dentro do diretório rode o comando:
 `docker-compose up -d`
