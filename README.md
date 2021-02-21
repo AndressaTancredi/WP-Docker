@@ -78,4 +78,4 @@ volumes:
 
 * Agora acesse http://localhost:8000 no seu browser, prossiga com a instalção do Wordpress.
 
-Feito com :heart: por Andressa Tancredi.
+Feito com s2 por Andressa Tancredi.
