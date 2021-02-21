@@ -72,3 +72,10 @@ services:
        WORDPRESS_DB_NAME: wordpress
 volumes:
     db_data: {}
+
+* Dentro do diretório rode o comando:
+`docker-compose up -d`
+
+* Agora acesse http://localhost:8000 no seu browser, prossiga com a instalção do Wordpress.
+
+Feito com :heart: por Andressa Tancredi.
