@@ -38,15 +38,21 @@ Deve retornar:
 * Copie e cole o conteúdo abaixo no arquivo criado:
 
 
+```
 version: '3.3'
 
 services:
    db:
      image: mysql:5.7
+     
      volumes:
+     
        - db_data:/var/lib/mysql
+       - 
      restart: always
+     
      environment:
+     
        MYSQL_ROOT_PASSWORD: somewordpress
        MYSQL_DATABASE: wordpress
        MYSQL_USER: wordpress
