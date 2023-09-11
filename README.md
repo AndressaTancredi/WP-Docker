@@ -1,44 +1,33 @@
-# WP-Docker
-Como rodar Wordpress em um ambiente isolado usando Docker.
+## WP-Docker
+Running WordPress in an isolated environment using Docker.
+Install Docker Compose
 
+### Linux
 
-## Instalar Docker Compose
+- Run the following command to download:
+  sudo curl -L "https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
-#### Linux
+- Run the following command for permissions:
+  sudo chmod +x /usr/local/bin/docker-compose
+  If it fails, please verify the path.
 
-* Rodar o comando para fazer o download:
+- Test the installation:
+  $ docker-compose --version
+  It should return:
+  docker-compose version 1.28.4, build 1110ad01
 
-`sudo curl -L "https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
+### Windows
 
-* Rodar o comando para permissões:
+- Use the link below to download and install:
+  Docker Desktop for Windows
 
-`sudo chmod +x /usr/local/bin/docker-compose`
+Creating the Environment
 
-Caso falhe, verifique o caminho.
+- Create a new directory and navigate to it.
+- Create a file named:
+  docker-compose.yml
+- Copy and paste the following content into the created file:
 
-* Teste a instalação:
-
-`$ docker-compose --version`
-
-Deve retornar:
-
-`docker-compose version 1.28.4, build 1110ad01`
-
-#### Windows
-* Usar o link abaixo, fazer o download e instalar:
-
-`https://hub.docker.com/editions/community/docker-ce-desktop-windows/`
-
-## Criação do Ambiente
-
-* Crie um diretório novo e entre no diretório.
-* Crie um arquivo com o nome:
-
-`docker-compose.yml`
-* Copie e cole o conteúdo abaixo no arquivo criado:
-
-
-```
 version: '3.3'
 
 services:
@@ -66,11 +55,10 @@ services:
        WORDPRESS_DB_NAME: wordpress
 volumes:
     db_data: {}
- ```
 
-* Dentro do diretório rode o comando:
-`docker-compose up -d`
+Inside the directory, run the following command:
+docker-compose up -d
 
-* Agora acesse http://localhost:8000 no seu browser e prossiga com a instalção do Wordpress.
+Now, access http://localhost:8000 in your browser and proceed with the WordPress installation.
 
-Feito com s2 por Andressa Tancredi.
+Made with ❤ by Andressa Tancredi.
